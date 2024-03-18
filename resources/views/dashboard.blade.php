@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="text-xl  leading-tight bg-[#075985] text-gray-300 shadow-black">
-            {{ __('Dashboard') }}
+            {{ __('Dashboardd') }}
         </h2>
     </x-slot>
 
@@ -14,4 +14,19 @@
             </div>
         </div>
     </div>
+
+    <div class="flex flex-row py-2">
+        <div class="ml-44 ">
+            <div class="p-5 overflow-hidden shadow-md bg-slate-50 md:rounded-lg basis-1/4">
+            {{ ("so this is where you put something interesting") }}
+            </div>
+        </div>
+
+        <div class="ml-2">
+            <div class="p-5 overflow-hidden shadow-md bg-slate-50 md:rounded-lg basis-1/4">
+            {{ ("heyyyyy his is where you put something interesting") }}
+            </div>
+        </div>
+    </div>
+
 </x-app-layout>
