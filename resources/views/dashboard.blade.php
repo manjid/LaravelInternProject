@@ -9,26 +9,26 @@
         </div>
     </div>
 
-    <div class="flex flex-row py-8">
+    <div class="flex flex-row py-8 ">
         <div class="ml-44 ">
-            <div class="p-5 overflow-hidden shadow-md bg-slate-50 md:rounded-lg basis-1/4">
+            <div class="p-5 overflow-hidden shadow-md bg-slate-50 md:rounded-lg ">
             {{ ("so this is where you put something interesting") }}
             </div>
         </div>
 
         <div class="ml-2">
-            <div class="p-5 overflow-hidden shadow-md bg-slate-50 md:rounded-lg basis-1/4">
+            <div class="p-5 overflow-hidden shadow-md bg-slate-50 md:rounded-lg ">
             {{ ("heyyyyy his is where you put something interesting") }}
             </div>
         </div>
     </div>
 
-    <div class="p-5 ml-40 overflow-hidden card w-80 md:rounded-lg">
+    <div class="p-5 ml-40 overflow-hidden rounded-lg card w-80">
         <figure>
-          <img class=" md:rounded-t-xl" src="https://picsum.photos/id/103/500/250" />
+          <img class="rounded-t-xl" src="https://picsum.photos/id/103/500/250" />
         </figure>
           <h2 class="py-2 text-gray-300 card-title">Example of Card</h2>
-          <p class="overflow-hidden text-gray-300 shadow-md">Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+          <p class="overflow-hidden text-gray-300 shadow-md">this is a part where i try card for new things.</p>
       </div>
 
 </x-app-layout>

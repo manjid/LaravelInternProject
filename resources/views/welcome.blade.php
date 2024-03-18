@@ -17,7 +17,7 @@
         @livewireStyles
     </head>
     <body class=" dark:text-white/50">
-        <div class="bg-[#075985] text-black/50 ">
+        <div class="bg-[#082f49] text-black/50 ">
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
                 <div class="relative px-6 ">
                     <header class="grid items-center grid-cols-2 gap-2 py-10 lg:grid-cols-3">

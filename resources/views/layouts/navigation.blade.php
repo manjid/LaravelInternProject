@@ -11,7 +11,7 @@
                         {{ ('Dashboard') }}
                     </x-nav-link>
                     </div>
-                    <div class="flex text-xl btn btn-ghost">
+                    <div class="flex text-xl transition duration-150 ease-in-out btn btn-ghost">
                     <x-nav-link :href="route('helpdesk')" :active="request()->routeIs('helpdesk')">
                         {{ __('IT HelpDesk') }}
                     </x-nav-link>
