@@ -1,14 +1,21 @@
-<nav x-data="{ open: false }" class="bg-[#075985] border-shadow text-gray-200">
+<nav x-data="{ open: false }" class="bg-[#082f49] border-shadow text-gray-200">
     <!-- Primary Navigation Menu -->
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
-            <div class="flex text-white">
+            <div class="flex text-white ">
 
                 <!-- Navigation Links -->
-                <div class=" sm:flex bg-[#075985] text-white hover:text-gray-200">
+                <div class="divider flex bg-[#082f49] text-white text-r">
+                    <div class="flex text-xl btn btn-ghost">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ ('Dashboard') }}
                     </x-nav-link>
+                    </div>
+                    <div class="flex text-xl btn btn-ghost">
+                    <x-nav-link :href="route('helpdesk')" :active="request()->routeIs('helpdesk')">
+                        {{ __('IT HelpDesk') }}
+                    </x-nav-link>
+                    </div>
                 </div>
             </div>
 
@@ -16,7 +23,7 @@
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
-                        <button class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-900 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-[#075985] focus:outline-none">
+                        <button class="inline-flex items-center px-3 py-2 text-sm bg-[#082f49] font-medium leading-4 text-gray-300 transition duration-150 ease-in-out  border border-transparent rounded-md hover:text-[#075985] focus:outline-none">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ms-1">
@@ -64,11 +71,9 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            <div class="ml-28">
             <x-responsive-nav-link :href="route('helpdesk')" :active="request()->routeIs('helpdesk')">
                 {{ __('IT HelpDesk') }}
             </x-responsive-nav-link>
-        </div>
         </div>
 
 
