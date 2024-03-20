@@ -1,5 +1,5 @@
 <nav class="">
-    <h1>{{ $name }}</h1>
+
     @auth
         <a
             href="{{ url('/dashboard') }}"

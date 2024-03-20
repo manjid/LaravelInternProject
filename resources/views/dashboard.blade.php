@@ -23,12 +23,16 @@
         </div>
     </div>
 
-    <div class="p-5 ml-40 overflow-hidden rounded-lg card w-80">
+    <div class="p-5 ml-40 overflow-hidden rounded-lg hover:animate-bounce card w-80">
         <figure>
           <img class="rounded-t-xl" src="https://picsum.photos/id/103/500/250" />
         </figure>
           <h2 class="py-2 text-gray-300 card-title">Example of Card</h2>
           <p class="overflow-hidden text-gray-300 shadow-md">this is a part where i try card for new things.</p>
       </div>
+
+      <footer class="py-16 text-sm text-center text-black dark:text-white/70">
+        Laravel version{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+    </footer>
 
 </x-app-layout>

@@ -1,17 +1,25 @@
-<nav x-data="{ open: false }" class="bg-[#082f49] border-shadow text-gray-200">
+<nav x-data="{ open: false }" class="bg-[#6b6b6b] border-shadow text-gray-200">
+
+
     <!-- Primary Navigation Menu -->
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="px-4 ">
         <div class="flex justify-between h-16">
-            <div class="flex text-white ">
+            <div class="flex text-gray-300">
+                <div class="pt-1 pb-1 ml-6 size-28 ">
+                    <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}" >
+                <img src="image/IMANJID-removebg.png" />
+                    </a>
+                </div>
+
 
                 <!-- Navigation Links -->
-                <div class="divider flex bg-[#082f49] text-white text-r">
-                    <div class="flex text-xl btn btn-ghost">
+                <div class="flex max-w-7xl sm:px-6 lg:px-8 bg-[#6b6b6b] text-gray-300 text-r">
+                    <div class="flex text-xl ">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ ('Dashboard') }}
                     </x-nav-link>
                     </div>
-                    <div class="flex text-xl transition duration-150 ease-in-out btn btn-ghost">
+                    <div class="flex text-xl transition duration-150 ease-in-out ">
                     <x-nav-link :href="route('helpdesk')" :active="request()->routeIs('helpdesk')">
                         {{ __('IT HelpDesk') }}
                     </x-nav-link>
@@ -23,7 +31,7 @@
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
-                        <button class="inline-flex items-center px-3 py-2 text-sm bg-[#082f49] font-medium leading-4 text-gray-300 transition duration-150 ease-in-out  border border-transparent rounded-md hover:text-[#075985] focus:outline-none">
+                        <button class="inline-flex items-center px-3 py-2 text-sm bg-[#6b6b6b] font-medium leading-4 text-gray-300 transition duration-150 ease-in-out  border border-transparent rounded-md hover:text-[#a50034] focus:outline-none">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ms-1">

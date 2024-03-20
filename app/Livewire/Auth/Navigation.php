@@ -9,8 +9,7 @@ class Navigation extends Component
 
     public function render()
     {
-        return view('livewire.auth.navigation')->with([
-            'name' => ''
-        ]);
+        return view('livewire.auth.navigation');
+
     }
 }
