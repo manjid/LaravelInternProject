@@ -3,8 +3,7 @@
     <div class="navbar bg-[#a50034]">
         <div class="flex-1">
           <a class="text-xl btn btn-ghost" href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">IMANJID</a>
-
-        </div>
+ </div>
 
     <!-- Primary Navigation Menu -->
     <div class="px-4 ">

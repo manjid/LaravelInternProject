@@ -16,7 +16,7 @@
     </head>
     <body class="font-sans ">
         <div class="min-h-screen bg-slate-100 shadow-max">
-            <div class="sticky top-0 bg-cover">
+            <div class="sticky top-0 z-40">
             @include('layouts.navigation')
         </div>
             <!-- Page Heading -->

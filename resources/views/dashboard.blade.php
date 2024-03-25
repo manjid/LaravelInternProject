@@ -33,6 +33,26 @@
           <p class="text-gray-900 ">this is a part where i try card for new things.</p>
         </div>
       </div>
+
+      <div class="w-1/3 mt-6 mb-6 ml-40 shadow-xl hover:animate-pulse card card-side bg-slate-200">
+        <figure>
+          <img class="py-0 pl-0 rounded-l-lg" src="image/KLCC.jpeg" />
+        </figure>
+        <div class="card-body">
+          <h2 class="text-gray-900 card-title">Example of Card</h2>
+          <p class="text-gray-900 ">this is a part where i try card for new things.</p>
+        </div>
+      </div>
+
+      <div class="w-1/3 mt-6 mb-6 ml-40 shadow-xl hover:animate-pulse card card-side bg-slate-200">
+        <figure>
+          <img class="py-0 pl-0 rounded-l-lg" src="image/KLCC.jpeg" />
+        </figure>
+        <div class="card-body">
+          <h2 class="text-gray-900 card-title">Example of Card</h2>
+          <p class="text-gray-900 ">this is a part where i try card for new things.</p>
+        </div>
+      </div>
     </div>
 
       <footer class="items-center p-4 footer bg-neutral text-neutral-content">
