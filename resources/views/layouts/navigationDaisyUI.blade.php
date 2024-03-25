@@ -1,19 +1,26 @@
-<nav x-data="{ open: false }" class="text-gray-200 shadow-md bg-[#a50034] border-shadow ">
-
-    <div class="navbar bg-[#a50034]">
-        <div class="flex-1">
-          <a class="text-xl btn btn-ghost" href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">IMANJID</a>
-
-        </div>
+<div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="text-xl btn btn-ghost">daisyUI</a>
+    </div>
+    <div class="flex-none">
+      <button class="btn btn-square btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+      </button>
+    </div>
 
     <!-- Primary Navigation Menu -->
     <div class="px-4 ">
         <div class="flex justify-between h-16">
             <div class="flex text-gray-300">
+                <div class="pt-1 pb-1 ml-6 size-28 ">
+                    <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}" >
+                <img src="image/IMANJID-removebg.png" />
+                    </a>
+                </div>
 
 
                 <!-- Navigation Links -->
-                <div class="flex justify-center bg-[#a50034]  text-gray-300 ">
+                <div class="flex bg-[#a50034] text-gray-300 ">
                     <div class="flex text-xl ">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ ('Dashboard') }}
@@ -110,5 +117,4 @@
             </div>
         </div>
     </div>
-    </div>
-</nav>
+  </div>

@@ -16,8 +16,8 @@
         </style>
         @livewireStyles
     </head>
-    <body class=" dark:text-white/90">
-        <div class="bg-[#a50034] text-black/50 ">
+    <body class=" dark:text-gray-900">
+        <div class="text-gray-900 bg-[#a50034] ">
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
                 <div class="relative px-6 ">
                     <header class="grid items-center grid-cols-2 gap-2 py-10 lg:grid-cols-3">
@@ -37,7 +37,7 @@
                         </div>
                     </main>
 
-                    <footer class="py-16 text-sm text-center text-black dark:text-white/70">
+                    <footer class="py-16 text-sm text-center text-black dark:text-gray-900">
                         Laravel version{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </footer>
                 </div>

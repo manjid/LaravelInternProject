@@ -14,17 +14,16 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-[#a50034] shadow-max">
+    <body class="font-sans ">
+        <div class="min-h-screen bg-slate-100 shadow-max">
+            <div class="sticky top-0 bg-cover">
             @include('layouts.navigation')
-
+        </div>
             <!-- Page Heading -->
 
             @if (isset($header))
                 <header class="bg-[#a50034] shadow">
-                    <div class="py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
                         {{ $header }}
-                    </div>
                 </header>
             @endif
 
