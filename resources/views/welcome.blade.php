@@ -37,7 +37,7 @@
                         </div>
                     </main>
 
-                    <footer class="py-16 text-sm text-center text-black dark:text-gray-900">
+                    <footer class="py-16 text-sm text-center text-slate-50 dark:text-slate-200">
                         Laravel version{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </footer>
                 </div>

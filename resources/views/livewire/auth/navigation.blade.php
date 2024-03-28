@@ -3,14 +3,14 @@
     @auth
         <a
             href="{{ url('/dashboard') }}"
-            class="text-gray-900  hover:text-slate-50"
+            class="transition ease-in-out delay-75 text-slate-200 hover:text-gray-900 hover:-translate-y-1 hover:scale-95"
         >
             Dashboard
         </a>
     @else
         <a
             href="{{ route('login') }}"
-            class="px-3 text-gray-900 rounded-md hover:text-slate-50"
+            class="px-3 transition ease-in-out delay-75 rounded-md text-slate-200 hover:text-gray-900 hover:-translate-y-1 hover:scale-95"
         wire:navigate>
             Log in
         </a>
@@ -18,7 +18,7 @@
         @if (Route::has('register'))
             <a
                 href="{{ route('register') }}"
-                class="px-3 text-gray-900 rounded-md hover:text-slate-50"
+                class="px-3 transition ease-in-out delay-75 rounded-md text-slate-200 hover:text-gray-900 hover:-translate-y-1 hover:scale-95"
             wire:navigate>
                 Register
             </a>

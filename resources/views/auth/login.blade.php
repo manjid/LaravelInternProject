@@ -24,13 +24,6 @@
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="text-[#6b6b6b] border-gray-300 rounded shadow-sm focus:ring-gray-700" name="remember">
-                <span class="text-sm text-gray-900 ms-2">{{ __('want me to remember you?') }}</span>
-            </label>
-        </div>
 
         <div class="flex items-center justify-end mt-4 ">
             @if (Route::has('password.request'))
