@@ -13,12 +13,12 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans ">
         <div class="min-h-screen bg-slate-300 shadow-max">
             <div class="sticky top-0 z-40">
             @include('layouts.navigation')
         </div>
+    </head>
+    <body class="font-sans ">
             <!-- Page Heading -->
 
             @if (isset($header))

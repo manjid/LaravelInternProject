@@ -14,13 +14,14 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/helpdesk', [helpdeskController::class, 'helpdesk'])->name('helpdesk.helpdesk');
+Route::get('/store', [helpdeskController::class, 'store'])->name('helpdesk.store');
 
 // Create
 Route::get('/helpdesk/create', [helpdeskController::class, 'create'])->name('helpdesk.create');
 Route::post('/helpdesk', [helpdeskController::class, 'store'])->name('helpdesk.store');
 
 // Display
-Route::get('/helpdesk/{helpdesk}', [helpdeskController::class, 'show'])->name('helpdesk.show');
+Route::get('/store', [helpdeskController::class, 'store'])->name('helpdesk.store');
 
 // Edit
 Route::get('/helpdesk/{helpdesk}/edit', [helpdeskController::class, 'edit'])->name('helpdesk.edit');

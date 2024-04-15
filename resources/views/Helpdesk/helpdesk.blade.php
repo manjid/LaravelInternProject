@@ -1,12 +1,10 @@
 <x-app-layout>
 
-    <ul class="steps">
-        <li class="step step-primary"></li>
-        <li class="step step-primary">Choose plan</li>
-        <li class="step">Purchase</li>
-        <li class="step">Receive Product</li>
-      </ul>
-<form action="{{ route('helpdesk.store') }}" method="POST">
+
+<div class="flex flex-row justify-center py-0 pt-4 text-3xl text-gray-900 hover:animate-FadeIn">
+      <h1>Tell Us The Problem You Faced</h1>
+    </div>
+<form method="POST">
     @csrf
     <div class="flex flex-wrap mb-4 rounded-l-lg card-body ">
         <label for="title" class="block mb-2 text-sm font-bold text-gray-700">Title:</label>
@@ -36,34 +34,26 @@
             <span class="block text-red-500">{{ $errors->first('attachment') }}</span>
         @endif
     </div>
-    <x-primary-button class="ml-10">
+    <x-primary-button class="p-2 ml-10">
         {{ __('submit') }}
-    </x-primary-button>
+    </x-primary-xbutton>
+    <div class="pb-0">
+    @if (session('status') == 'report-save')
+    <p
+                    x-data="{ show: true }"
+                    x-show="show"
+                    x-transition
+                    x-init="setTimeout(() => show = false, 3000)"
+                    class="pt-2 transition ease-in-out alert">
+        {{ __('report has been created.') }}
+    </p>
+    </div>
+    @endif
+</div>
 </form>
 
-<div class="status-message">
-@if (session('status'))
-<div class="transition ease-in-out alert alert-primary">
-    {{ session('status') }}
-</div>
-</div>
-@endif
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-    const statusMessage = document.getElementById('status-message');
-
-    if (statusMessage) {
-        setTimeout(() => {
-            statusMessage.querySelector('.alert-success');
-        }, 5000)
-        statusMessage.querySelector('.alert-success').remove(); // Remove the success message after 5 seconds
-    }
-});
-</script>
-
-
-    <footer class="fixed bottom-0 items-center w-full p-4 py-3 footer bg-neutral text-neutral-content">
+    <footer class="fixed bottom-0 items-center w-full p-4 py-3 bg-cover bg-neutral footer text-neutral-content">
         <aside class="items-center grid-flow-col">
             <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
             clip-rule="evenodd" class="fill-current">

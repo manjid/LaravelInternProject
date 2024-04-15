@@ -41,8 +41,6 @@ class helpdeskController extends Controller
 
         $helpdesk->save();
 
-        return Redirect::route('helpdesk.helpdesk')->with('status', 'Helpdesk report created!');
-
     }
 
     /**
@@ -50,7 +48,9 @@ class helpdeskController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $helpdesk = Helpdesk::findOrFail($id);
+
+    return view('helpdesk.store', ['helpdesk' => $helpdesk]);
     }
 
     /**

@@ -14,8 +14,8 @@
       </div>
 
       <div class="my-10 mb-5 text-4xl font-bold text-center text-gray-800 ">
-        This is an example of what we can help you with
-    </div>
+          This is an example of what we can help you with
+        </div>
     <div class="flex flex-wrap rounded-l-lg">
         <a href="{{ route('helpdesk.helpdesk') }}" class="w-1/3 mt-6 mb-6 ml-40 transition ease-in-out delay-75 shadow-xl hover:animate-pulse hover:-translate-y-1 hover:scale-95 card card-side bg-slate-200" >
         <figure>
