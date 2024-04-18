@@ -6,7 +6,7 @@
           <div class="max-w-md">
             <h1 class="mb-5 text-5xl font-bold">Hello {{ Auth::user()->name }}!</h1>
             <p class="mb-5">Welcome to our innovative IT Helpdesk platform, where users are empowered to report any IT-related issues they encounter with ease and efficiency. Our cutting-edge system streamlines the process, allowing users to submit detailed descriptions of their problems effortlessly. </p>
-            <x-nav-link :href="route('helpdesk.helpdesk')" :active="request()->routeIs('helpdesk')" class="transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105  btn bg-[#a50034] text-sm font-sans border-[#a50034] hover:bg-white hover:border-white">
+            <x-nav-link :href="route('helpdesk.index')" :active="request()->routeIs('helpdesk.index')" class="transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105  btn bg-[#a50034] text-sm font-sans border-[#a50034] hover:bg-white hover:border-white">
             <button>{{ __('Get Started') }}</button>
             </x-nav-link>
           </div>
@@ -17,7 +17,7 @@
           This is an example of what we can help you with
         </div>
     <div class="flex flex-wrap rounded-l-lg">
-        <a href="{{ route('helpdesk.helpdesk') }}" class="w-1/3 mt-6 mb-6 ml-40 transition ease-in-out delay-75 shadow-xl hover:animate-pulse hover:-translate-y-1 hover:scale-95 card card-side bg-slate-200" >
+        <a href="{{ route('helpdesk.index') }}" class="w-1/3 mt-6 mb-6 ml-40 transition ease-in-out delay-75 shadow-xl hover:animate-pulse hover:-translate-y-1 hover:scale-95 card card-side bg-slate-200" >
         <figure>
           <img class="w-full h-full rounded-l-lg " src="image/windows-10.jpg" />
         </figure>
@@ -27,7 +27,7 @@
         </div>
         </a>
 
-        <a href="{{ route('helpdesk.helpdesk') }}" class="w-1/3 mt-6 mb-6 ml-40 transition ease-in-out delay-75 shadow-xl hover:animate-pulse hover:-translate-y-1 hover:scale-95 card card-side bg-slate-200" >
+        <a href="{{ route('helpdesk.index') }}" class="w-1/3 mt-6 mb-6 ml-40 transition ease-in-out delay-75 shadow-xl hover:animate-pulse hover:-translate-y-1 hover:scale-95 card card-side bg-slate-200" >
             <figure>
           <img class="w-full h-full rounded-l-lg" src="image/SDLC.png" />
         </figure>

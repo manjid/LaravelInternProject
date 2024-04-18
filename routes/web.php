@@ -13,7 +13,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/helpdesk', [helpdeskController::class, 'helpdesk'])->name('helpdesk.helpdesk');
+Route::get('/helpdesk', [helpdeskController::class, 'helpdesk'])->name('helpdesk.index');
 Route::get('/store', [helpdeskController::class, 'store'])->name('helpdesk.store');
 
 // Create
