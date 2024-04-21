@@ -18,10 +18,10 @@ Route::get('/store', [helpdeskController::class, 'store'])->name('helpdesk.store
 
 // Create
 Route::get('/helpdesk/create', [helpdeskController::class, 'create'])->name('helpdesk.create');
-Route::post('/helpdesk', [helpdeskController::class, 'store'])->name('helpdesk.store');
+Route::post('/helpdesk', [helpdeskController::class, 'store'])->name('helpdesk.index');
 
 // Display
-Route::get('/store', [helpdeskController::class, 'store'])->name('helpdesk.store');
+Route::get('/show', [helpdeskController::class, 'show'])->name('helpdesk.show');
 
 // Edit
 Route::get('/helpdesk/{helpdesk}/edit', [helpdeskController::class, 'edit'])->name('helpdesk.edit');
@@ -29,6 +29,9 @@ Route::put('/helpdesk/{helpdesk}', [helpdeskController::class, 'update'])->name(
 
 // Delete
 Route::delete('/helpdesk/{helpdesk}', [helpdeskController::class, 'destroy'])->name('helpdesk.destroy');
+
+//display,delete,edit
+Route::get('/store', [helpdeskController::class, 'storing'])->name('helpdesk.store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

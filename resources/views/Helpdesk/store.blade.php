@@ -1,13 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<x-app-layout>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Report</title>
 </head>
-<body>
-    <h1>{{ $helpdesk->title }}</h1>
-    <p>{{ $helpdesk->description }}</p>
+<div class="py-12">
+    <div class="mx-auto space-y-6 max-w-7xl sm:px-6 lg:px-8">
+        <div class="p-4 bg-white shadow sm:p-8 sm:rounded-lg">
+
+    <body>
+    <table class="table text-center table-fixed justify-content-center">
+        <thead class=" bg-slate-300">
+        <tr class="text-lg text-gray-700">
+            <th>ID</th>
+            <th>Title</th>
+            <th>Problem</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        @foreach ( $reports as $report )
+        <tr>
+            <td>{{ $report->id }}</td>
+            <td>{{ $report->title }}</td>
+            <td>{{ $report->problem }}</td>
+            <td>
+                <form action="{{ route('helpdesk.destroy' ,$report->id) }}" method="POST">
+                    <a class="btn btn-info" href="{{ route('helpdesk.show' , $report->id) }}">Show</a>
+                    <a class="btn btn-info " href="{{ route('helpdesk.edit' , $report->id) }}">Edit</a>
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-warning ">Delete</button>
+                </form>
+            </td>
+        </tr>
+
+        @endforeach
+    </table>
 </body>
+</div>
+</div>
+</div>
 </html>
+</x-app-layout>

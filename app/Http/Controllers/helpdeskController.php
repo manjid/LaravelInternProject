@@ -41,16 +41,21 @@ class helpdeskController extends Controller
 
         $helpdesk->save();
 
+        return Redirect::route('helpdesk.index')->with('status', 'report-save');
+
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function storing()
     {
-        $helpdesk = Helpdesk::findOrFail($id);
+        $reports = Helpdesk::latest()->paginate(5);
 
-    return view('helpdesk.store', ['helpdesk' => $helpdesk]);
+        return view('helpdesk.store', compact('reports'))->with(request()->input('page'));
+        //compact tu maksudnya dia sama cam $reports cuma takyah dollar sign, function dia untuk sent ke variable untuk loop
+
+
     }
 
     /**

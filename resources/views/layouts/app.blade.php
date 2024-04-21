@@ -22,7 +22,7 @@
             <!-- Page Heading -->
 
             @if (isset($header))
-                <header class="bg-[#a50034] shadow">
+                <header>
                         {{ $header }}
                 </header>
             @endif

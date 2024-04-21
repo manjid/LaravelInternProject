@@ -83,6 +83,9 @@
             <x-responsive-nav-link :href="route('helpdesk.index')" :active="request()->routeIs('helpdesk')">
                 {{ __('IT HelpDesk') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('helpdesk.store')" :active="request()->routeIs('helpdesk')">
+                {{ __('Recent Report') }}
+            </x-responsive-nav-link>
         </div>
 
 
