@@ -48,7 +48,7 @@ class helpdeskController extends Controller
     /**
      * Display the specified resource.
      */
-    public function storing()
+    public function index()
     {
         $reports = Helpdesk::latest()->paginate(5);
 

@@ -31,7 +31,7 @@ Route::put('/helpdesk/{helpdesk}', [helpdeskController::class, 'update'])->name(
 Route::delete('/helpdesk/{helpdesk}', [helpdeskController::class, 'destroy'])->name('helpdesk.destroy');
 
 //display,delete,edit
-Route::get('/store', [helpdeskController::class, 'storing'])->name('helpdesk.store');
+Route::get('/store', [helpdeskController::class, 'index'])->name('helpdesk.store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

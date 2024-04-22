@@ -38,9 +38,11 @@
             <span class="block text-red-500">{{ $errors->first('attachment') }}</span>
         @endif
     </div>
-    <x-primary-button class="mt-2 mb-2 ml-28">
+    <div class="flex justify-end">
+    <x-primary-button class="mt-4 mb-9 mr-28">
         {{ __('submit') }}
     </x-primary-xbutton>
+</div>
     <div class="pb-0">
     @if (session('status') == 'report-save')
     <p
@@ -49,7 +51,7 @@
                     x-transition
                     x-init="setTimeout(() => show = false, 3000)"
                     class="pt-2 transition ease-in-out alert">
-        {{ __('report has been created.') }}
+        {{ __('report has been created') }}
     </p>
     </div>
     @endif

@@ -2,8 +2,11 @@
 
     <div class="navbar bg-[#a50034] hover:bg-[#a50034] ">
         <div class="flex-1 ml-11">
-          <a class="font-mono text-xl transition ease-in-out delay-50 hover:translate-y-1 hover:scale-105 hover:font-bold" href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">IMANJID</a>
- </div>
+            <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
+          <img class="transition ease-in-out delay-50 hover:translate-y-1 size-20 " src="image/iman-yazid-logo.png" ></img>
+        </a>
+
+        </div>
 
     <!-- Primary Navigation Menu -->
     <div class="px-4 ">

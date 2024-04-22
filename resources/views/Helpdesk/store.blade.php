@@ -3,12 +3,12 @@
 <head>
     <title>Report</title>
 </head>
-<div class="py-12">
+<div class="py-12 overflow-hidden overflow-x-auto overflow-y-auto">
     <div class="mx-auto space-y-6 max-w-7xl sm:px-6 lg:px-8">
         <div class="p-4 bg-white shadow sm:p-8 sm:rounded-lg">
 
     <body>
-    <table class="table text-center table-fixed justify-content-center">
+    <table class="table text-center justify-content-center">
         <thead class=" bg-slate-300">
         <tr class="text-lg text-gray-700">
             <th>ID</th>
@@ -35,6 +35,7 @@
 
         @endforeach
     </table>
+    {{ $reports->links() }}
 </body>
 </div>
 </div>
