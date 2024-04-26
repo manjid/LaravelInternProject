@@ -26,7 +26,7 @@
                     <main>
                         <div>
                             <center>
-                            <img class="h-40 ml-1 w-45 " src="{{ asset('image/iman-yazid-logo-removebg.png') }}"/>
+                            <img class="h-40 ml-1 w-45 " src="{{ asset('image/iman-yazid-up-down-removebg.png') }}"/>
                             </center>
                             <br>
                             <center>

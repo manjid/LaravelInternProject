@@ -58,6 +58,11 @@ class helpdeskController extends Controller
 
     }
 
+    public function show(Helpdesk $reports)
+    {
+        return view('helpdesk.show', compact('reports'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      */
