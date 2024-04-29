@@ -50,7 +50,7 @@ class helpdeskController extends Controller
      */
     public function index()
     {
-        $reports = Helpdesk::latest()->paginate(5);
+        $reports = Helpdesk::latest()->paginate(10);
 
         return view('helpdesk.store', compact('reports'))->with(request()->input('page'));
         //compact tu maksudnya dia sama cam $reports cuma takyah dollar sign, function dia untuk sent ke variable untuk loop
