@@ -24,7 +24,7 @@
             <td>{{ $report->problem }}</td>
             <td>
                 <form action="{{ route('helpdesk.destroy' ,$report->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('helpdesk.show' , $report->id) }}">Show</a>
+                    <a class="btn btn-info" href="{{ route('helpdesk.show' , ['id' =>$report->id]) }}">Show</a>
                     <a class="btn btn-info " href="{{ route('helpdesk.edit' , $report->id) }}">Edit</a>
                     @csrf
                     @method('DELETE')

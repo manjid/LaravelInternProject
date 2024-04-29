@@ -58,9 +58,15 @@ class helpdeskController extends Controller
 
     }
 
-    public function show(Helpdesk $reports)
+    public function show()
     {
-        return view('helpdesk.show', compact('reports'));
+        $id = request('id');
+
+        $report=Helpdesk::query()
+        ->where('id',$id)
+        ->firstOrFail();
+
+        return view('helpdesk.show', ['report' => $report]);
     }
 
     /**
