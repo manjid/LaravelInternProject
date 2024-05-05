@@ -3,7 +3,7 @@
     <div class="navbar bg-[#a50034] hover:bg-[#a50034] ">
         <div class="flex-1 ml-9 min-w-24 ">
             <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
-          <img class="transition ease-in-out delay-50 hover:translate-y-1 size-10 max-w-36 min-w-36 " src="image/imanyazid-ithelpdesk-smaller.png" ></img>
+          <img class="ml-10 transition ease-in-out scale-105 delay-50 hover:translate-y-1 size-10 max-w-40 min-w-44 " src="image/imanyazid-ithelpdesk-smaller.png" ></img>
         </a>
         </div>
 

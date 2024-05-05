@@ -3,7 +3,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\SoftDeletes;
 class Helpdesk extends Model
 {
     use HasFactory;
@@ -40,4 +40,6 @@ class Helpdesk extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    use SoftDeletes;
 }

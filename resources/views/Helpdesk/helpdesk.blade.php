@@ -1,5 +1,16 @@
 <x-app-layout>
-
+    <div class="pb-0">
+    @if (session('status') == 'report-save')
+    <p
+                    x-data="{ show: true }"
+                    x-show="show"
+                    x-transition
+                    x-init="setTimeout(() => show = false, 3000)"
+                    class="pt-2 transition ease-in-out alert bg-slate-500">
+        {{ __('report has been created') }}
+    </p>
+    @endif
+    </div>
 
 <div class="flex flex-row justify-center py-0 pt-4 text-3xl text-gray-900 hover:animate-FadeIn">
       <h1>Tell Us The Problem You Faced</h1>
@@ -42,19 +53,6 @@
     <x-primary-button class="mt-4 mb-9 mr-28">
         {{ __('submit') }}
     </x-primary-xbutton>
-</div>
-    <div class="pb-0">
-    @if (session('status') == 'report-save')
-    <p
-                    x-data="{ show: true }"
-                    x-show="show"
-                    x-transition
-                    x-init="setTimeout(() => show = false, 3000)"
-                    class="pt-2 transition ease-in-out alert">
-        {{ __('report has been created') }}
-    </p>
-    </div>
-    @endif
 </div>
 </form>
 

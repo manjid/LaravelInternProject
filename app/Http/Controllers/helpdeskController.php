@@ -88,8 +88,22 @@ class helpdeskController extends Controller
     /**
      * Remove the specified resource from storage.
      */
+    public function markForDeletion(string $id)
+    {
+        $helpdesk = Helpdesk::findOrFail($id);
+        $helpdesk->markForDeletion();
+
+        return Redirect::route('helpdesk.store')->with('status', 'marked-for-deletion');
+    }
     public function destroy(string $id)
     {
-        //
+        $helpdesk = Helpdesk::findOrFail($id);
+        if ($helpdesk->isMarkedForDeletion()) {
+            $helpdesk->forceDelete();
+        } else {
+            $helpdesk->delete();
+        }
+
+        return Redirect::route('helpdesk.store')->with('status', 'sweet-alert');
     }
 }
