@@ -10,7 +10,7 @@
             </x-nav-link>
           </div>
         </div>
-      </div>
+      </div>    
 
       <div class="my-10 mb-5 text-4xl font-bold text-center text-gray-800 ">
           This is an example of what we can help you with
