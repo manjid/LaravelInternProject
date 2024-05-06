@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="min-h-screen hero" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+    <div class="min-h-screen hero" style="background-image: url(image/it_helpdesk_bg.jpg);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="text-center hero-content">
           <div class="max-w-md">

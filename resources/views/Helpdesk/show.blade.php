@@ -23,7 +23,7 @@
             <button>{{ __('Back') }}</button>
             </x-nav-link>
         <div class="py-12 h-[calc(100vh-210px)] overflow-hidden overflow-y-auto h">
-            <div class="mx-auto space-y-6 max-w-7xl sm:px-6 lg:px-8">
+            <div class="mx-auto my-auto space-y-6 max-w-7xl sm:px-6 lg:px-8">
                 <div class="flex p-4 bg-white shadow sm:p-8 sm:rounded-lg ">
                     <table class="table text-center table-responsive justify-content-center">
                         <thead class=" bg-slate-300">
