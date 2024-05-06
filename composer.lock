@@ -23,7 +23,7 @@
             "require": {
                 "blade-ui-kit/blade-icons": "^1.6",
                 "illuminate/support": "^9.0|^10.0|^11.0",
-                "php": "^8.0"
+                "php": "^8.2"
             },
             "require-dev": {
                 "orchestra/testbench": "^7.0|^8.0|^9.0",
@@ -94,7 +94,7 @@
                 "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0",
                 "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
                 "illuminate/view": "^8.0|^9.0|^10.0|^11.0",
-                "php": "^7.4|^8.0",
+                "php": "^7.4|^8.2",
                 "symfony/console": "^5.3|^6.0|^7.0",
                 "symfony/finder": "^5.3|^6.0|^7.0"
             },
@@ -171,7 +171,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.2"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
@@ -231,7 +231,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.2"
             },
             "conflict": {
                 "doctrine/dbal": "<4.0.0 || >=5.0.0"
@@ -300,7 +300,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1 || ^8.2"
             },
             "require-dev": {
                 "phpstan/phpstan": "^0.12.42",
@@ -375,7 +375,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^11.0",
@@ -466,7 +466,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.2"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^12",
@@ -543,7 +543,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0",
+                "php": "^7.2|^8.2",
                 "webmozart/assert": "^1.0"
             },
             "replace": {
@@ -605,7 +605,7 @@
             },
             "require": {
                 "doctrine/lexer": "^2.0 || ^3.0",
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/polyfill-intl-idn": "^1.26"
             },
             "require-dev": {
@@ -671,7 +671,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4|^8.0",
+                "php": "^7.4|^8.2",
                 "symfony/http-foundation": "^4.4|^5.4|^6|^7"
             },
             "require-dev": {
@@ -742,7 +742,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5 || ^8.0",
+                "php": "^7.2.5 || ^8.2",
                 "phpoption/phpoption": "^1.9.2"
             },
             "require-dev": {
@@ -807,7 +807,7 @@
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.5.3 || ^2.0.1",
                 "guzzlehttp/psr7": "^1.9.1 || ^2.5.1",
-                "php": "^7.2.5 || ^8.0",
+                "php": "^7.2.5 || ^8.2",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
             },
@@ -930,7 +930,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5 || ^8.0"
+                "php": "^7.2.5 || ^8.2"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
@@ -1013,7 +1013,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5 || ^8.0",
+                "php": "^7.2.5 || ^8.2",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.1 || ^2.0",
                 "ralouphie/getallheaders": "^3.0"
@@ -1129,7 +1129,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5 || ^8.0",
+                "php": "^7.2.5 || ^8.2",
                 "symfony/polyfill-php80": "^1.24"
             },
             "require-dev": {
@@ -1215,7 +1215,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.3"
+                "php": ">=8.2.3"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.19",
@@ -1277,7 +1277,7 @@
                 "jfcherng/php-color-output": "^3",
                 "jfcherng/php-mb-string": "^1.4.6 || ^2",
                 "jfcherng/php-sequence-matcher": "^3.2.10 || ^4",
-                "php": ">=7.4"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.51",
@@ -1341,7 +1341,7 @@
             },
             "require": {
                 "ext-iconv": "*",
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3",
@@ -1396,7 +1396,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3",
@@ -1719,7 +1719,7 @@
             "require": {
                 "ext-mbstring": "*",
                 "illuminate/collections": "^10.0|^11.0",
-                "php": "^8.1",
+                "php": "^8.2",
                 "symfony/console": "^6.2|^7.0"
             },
             "conflict": {
@@ -2091,7 +2091,7 @@
             "require": {
                 "league/flysystem-local": "^3.0.0",
                 "league/mime-type-detection": "^1.0.0",
-                "php": "^8.0.2"
+                "php": "^8.2.2"
             },
             "conflict": {
                 "async-aws/core": "<1.19.0",
@@ -2182,7 +2182,7 @@
                 "ext-fileinfo": "*",
                 "league/flysystem": "^3.0.0",
                 "league/mime-type-detection": "^1.0.0",
-                "php": "^8.0.2"
+                "php": "^8.2.2"
             },
             "type": "library",
             "autoload": {
@@ -2299,7 +2299,7 @@
                 "illuminate/support": "^10.0|^11.0",
                 "illuminate/validation": "^10.0|^11.0",
                 "league/mime-type-detection": "^1.9",
-                "php": "^8.1",
+                "php": "^8.2",
                 "symfony/console": "^6.0|^7.0",
                 "symfony/http-kernel": "^6.2|^7.0"
             },
@@ -2372,7 +2372,7 @@
             "require": {
                 "laravel/framework": "^10.38.2|^11.0",
                 "livewire/livewire": "^3.0",
-                "php": "^8.1"
+                "php": "^8.2"
             },
             "require-dev": {
                 "laravel/folio": "^1.1",
@@ -2442,7 +2442,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "psr/log": "^2.0 || ^3.0"
             },
             "provide": {
@@ -2545,7 +2545,7 @@
             "require": {
                 "carbonphp/carbon-doctrine-types": "*",
                 "ext-json": "*",
-                "php": "^8.1",
+                "php": "^8.2",
                 "psr/clock": "^1.0",
                 "symfony/clock": "^6.3 || ^7.0",
                 "symfony/polyfill-mbstring": "^1.0",
@@ -2800,7 +2800,7 @@
                 "ext-ctype": "*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "php": ">=7.4"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "ircmaxell/php-yacc": "^0.0.7",
@@ -2943,7 +2943,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5 || ^8.0"
+                "php": "^7.2.5 || ^8.2"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
@@ -3018,7 +3018,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0 || ^8.0"
+                "php": "^7.0 || ^8.2"
             },
             "type": "library",
             "autoload": {
@@ -3066,7 +3066,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4.0"
+                "php": ">=8.2.0"
             },
             "type": "library",
             "extra": {
@@ -3119,7 +3119,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.0"
+                "php": ">=8.2.0"
             },
             "type": "library",
             "extra": {
@@ -3169,7 +3169,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0 || ^8.0",
+                "php": "^7.0 || ^8.2",
                 "psr/http-message": "^1.0 || ^2.0"
             },
             "type": "library",
@@ -3221,7 +3221,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0",
+                "php": ">=8.2.0",
                 "psr/http-message": "^1.0 || ^2.0"
             },
             "type": "library",
@@ -3276,7 +3276,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "type": "library",
             "extra": {
@@ -3329,7 +3329,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.0"
+                "php": ">=8.2.0"
             },
             "type": "library",
             "extra": {
@@ -3379,7 +3379,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.0"
+                "php": ">=8.2.0"
             },
             "type": "library",
             "extra": {
@@ -3433,7 +3433,7 @@
                 "ext-json": "*",
                 "ext-tokenizer": "*",
                 "nikic/php-parser": "^5.0 || ^4.0",
-                "php": "^8.0 || ^7.4",
+                "php": "^8.2 || ^7.4",
                 "symfony/console": "^7.0 || ^6.0 || ^5.0 || ^4.0 || ^3.4",
                 "symfony/var-dumper": "^7.0 || ^6.0 || ^5.0 || ^4.0 || ^3.4"
             },
@@ -3509,7 +3509,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.1",
@@ -3553,7 +3553,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.2"
             },
             "require-dev": {
                 "captainhook/plugin-composer": "^5.3",
@@ -3644,7 +3644,7 @@
             "require": {
                 "brick/math": "^0.8.8 || ^0.9 || ^0.10 || ^0.11 || ^0.12",
                 "ext-json": "*",
-                "php": "^8.0",
+                "php": "^8.2",
                 "ramsey/collection": "^1.2 || ^2.0"
             },
             "replace": {
@@ -4053,7 +4053,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "extra": {
@@ -4275,7 +4275,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "psr/event-dispatcher": "^1"
             },
             "type": "library",
@@ -4769,7 +4769,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.2"
             },
             "provide": {
                 "ext-ctype": "*"
@@ -4848,7 +4848,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.2"
             },
             "suggest": {
                 "ext-intl": "For best performance"
@@ -4926,7 +4926,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1",
+                "php": ">=8.2",
                 "symfony/polyfill-intl-normalizer": "^1.10",
                 "symfony/polyfill-php72": "^1.10"
             },
@@ -5010,7 +5010,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.2"
             },
             "suggest": {
                 "ext-intl": "For best performance"
@@ -5091,7 +5091,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.2"
             },
             "provide": {
                 "ext-mbstring": "*"
@@ -5171,7 +5171,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "extra": {
@@ -5244,7 +5244,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "extra": {
@@ -5324,7 +5324,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1",
+                "php": ">=8.2",
                 "symfony/polyfill-php80": "^1.14"
             },
             "type": "library",
@@ -5401,7 +5401,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.2"
             },
             "provide": {
                 "ext-uuid": "*"
@@ -5622,7 +5622,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "psr/container": "^1.1|^2.0",
                 "symfony/deprecation-contracts": "^2.5|^3"
             },
@@ -5885,7 +5885,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "extra": {
@@ -6122,7 +6122,7 @@
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "php": "^5.5 || ^7.0 || ^8.0",
+                "php": "^5.5 || ^7.0 || ^8.2",
                 "symfony/css-selector": "^2.7 || ^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0"
             },
             "require-dev": {
@@ -6175,7 +6175,7 @@
             "require": {
                 "ext-pcre": "*",
                 "graham-campbell/result-type": "^1.1.2",
-                "php": "^7.2.5 || ^8.0",
+                "php": "^7.2.5 || ^8.2",
                 "phpoption/phpoption": "^1.9.2",
                 "symfony/polyfill-ctype": "^1.24",
                 "symfony/polyfill-mbstring": "^1.24",
@@ -6257,7 +6257,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">=8.2.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
@@ -6332,7 +6332,7 @@
             },
             "require": {
                 "ext-ctype": "*",
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "conflict": {
                 "phpstan/phpstan": "<0.12.20",
@@ -6485,7 +6485,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1 || ^8.2"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^9",
@@ -6532,7 +6532,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0",
+                "php": "^7.4 || ^8.2",
                 "psr/container": "^1.0 || ^2.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
             },
@@ -6595,7 +6595,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "require-dev": {
                 "fidry/makefile": "^0.2.0",
@@ -6656,7 +6656,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0 || ^8.0",
+                "php": "^5.5.9 || ^7.0 || ^8.2",
                 "psr/log": "^1.0.1 || ^2.0 || ^3.0"
             },
             "require-dev": {
@@ -6727,7 +6727,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3|^7.0|^8.0"
+                "php": "^5.3|^7.0|^8.2"
             },
             "replace": {
                 "cordoval/hamcrest-php": "*",
@@ -6779,7 +6779,7 @@
             },
             "require": {
                 "composer-runtime-api": "^2.0.0",
-                "php": "^7.1|^8.0"
+                "php": "^7.1|^8.2"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.2",
@@ -6841,7 +6841,7 @@
                 "ext-mbstring": "*",
                 "ext-tokenizer": "*",
                 "ext-xml": "*",
-                "php": "^8.1.0"
+                "php": "^8.2.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.54.0",
@@ -6906,7 +6906,7 @@
                 "illuminate/console": "^9.52.16|^10.0|^11.0",
                 "illuminate/contracts": "^9.52.16|^10.0|^11.0",
                 "illuminate/support": "^9.52.16|^10.0|^11.0",
-                "php": "^8.0",
+                "php": "^8.2",
                 "symfony/console": "^6.0|^7.0",
                 "symfony/yaml": "^6.0|^7.0"
             },
@@ -6968,7 +6968,7 @@
             "require": {
                 "hamcrest/hamcrest-php": "^2.0.1",
                 "lib-pcre": ">=7.0",
-                "php": ">=7.3"
+                "php": ">=8.2"
             },
             "conflict": {
                 "phpunit/phpunit": "<8.0"
@@ -7049,7 +7049,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1 || ^8.2"
             },
             "conflict": {
                 "doctrine/collections": "<1.6.8",
@@ -7210,7 +7210,7 @@
                 "nunomaduro/termwind": "^1.15.1|^2.0.1",
                 "pestphp/pest-plugin": "^2.1.1",
                 "pestphp/pest-plugin-arch": "^2.7.0",
-                "php": "^8.1.0",
+                "php": "^8.2.1.0",
                 "phpunit/phpunit": "^10.5.17"
             },
             "conflict": {
@@ -7315,7 +7315,7 @@
             "require": {
                 "composer-plugin-api": "^2.0.0",
                 "composer-runtime-api": "^2.2.2",
-                "php": "^8.1"
+                "php": "^8.2.1"
             },
             "conflict": {
                 "pestphp/pest": "<2.2.3"
@@ -7385,7 +7385,7 @@
             "require": {
                 "nunomaduro/collision": "^7.10.0|^8.1.0",
                 "pestphp/pest-plugin": "^2.1.1",
-                "php": "^8.1",
+                "php": "^8.2.2.1",
                 "ta-tikoma/phpunit-architecture-test": "^0.8.4"
             },
             "require-dev": {
@@ -7456,7 +7456,7 @@
             "require": {
                 "laravel/framework": "^10.48.9|^11.5.0",
                 "pestphp/pest": "^2.34.7",
-                "php": "^8.1.0"
+                "php": "^8.2.2.0"
             },
             "require-dev": {
                 "laravel/dusk": "^7.13.0",
@@ -7533,7 +7533,7 @@
                 "ext-phar": "*",
                 "ext-xmlwriter": "*",
                 "phar-io/version": "^3.0.1",
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "type": "library",
             "extra": {
@@ -7595,7 +7595,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "type": "library",
             "autoload": {
@@ -7646,7 +7646,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "type": "library",
             "extra": {
@@ -7701,7 +7701,7 @@
             "require": {
                 "doctrine/deprecations": "^1.1",
                 "ext-filter": "*",
-                "php": "^7.4 || ^8.0",
+                "php": "^7.4 || ^8.2",
                 "phpdocumentor/reflection-common": "^2.2",
                 "phpdocumentor/type-resolver": "^1.7",
                 "phpstan/phpdoc-parser": "^1.7",
@@ -7764,7 +7764,7 @@
             },
             "require": {
                 "doctrine/deprecations": "^1.0",
-                "php": "^7.3 || ^8.0",
+                "php": "^7.3 || ^8.2",
                 "phpdocumentor/reflection-common": "^2.0",
                 "phpstan/phpdoc-parser": "^1.13"
             },
@@ -7821,7 +7821,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "require-dev": {
                 "doctrine/annotations": "^2.0",
@@ -7872,7 +7872,7 @@
                 "ext-libxml": "*",
                 "ext-xmlwriter": "*",
                 "nikic/php-parser": "^4.18 || ^5.0",
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "phpunit/php-file-iterator": "^4.0",
                 "phpunit/php-text-template": "^3.0",
                 "sebastian/code-unit-reverse-lookup": "^3.0",
@@ -7946,7 +7946,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8007,7 +8007,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "ext-pcntl": "*",
@@ -8070,7 +8070,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8130,7 +8130,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8198,7 +8198,7 @@
                 "myclabs/deep-copy": "^1.10.1",
                 "phar-io/manifest": "^2.0.3",
                 "phar-io/version": "^3.0.2",
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "phpunit/php-code-coverage": "^10.1.5",
                 "phpunit/php-file-iterator": "^4.0",
                 "phpunit/php-invoker": "^4.0",
@@ -8290,7 +8290,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8347,7 +8347,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8403,7 +8403,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8460,7 +8460,7 @@
             "require": {
                 "ext-dom": "*",
                 "ext-mbstring": "*",
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "sebastian/diff": "^5.0",
                 "sebastian/exporter": "^5.0"
             },
@@ -8536,7 +8536,7 @@
             },
             "require": {
                 "nikic/php-parser": "^4.18 || ^5.0",
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8593,7 +8593,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0",
@@ -8660,7 +8660,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8725,7 +8725,7 @@
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "sebastian/recursion-context": "^5.0"
             },
             "require-dev": {
@@ -8802,7 +8802,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "sebastian/object-reflector": "^3.0",
                 "sebastian/recursion-context": "^5.0"
             },
@@ -8865,7 +8865,7 @@
             },
             "require": {
                 "nikic/php-parser": "^4.18 || ^5.0",
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -8922,7 +8922,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "sebastian/object-reflector": "^3.0",
                 "sebastian/recursion-context": "^5.0"
             },
@@ -8979,7 +8979,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -9034,7 +9034,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -9097,7 +9097,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -9153,7 +9153,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "extra": {
@@ -9206,7 +9206,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3|^8.0"
+                "php": "^7.3|^8.2"
             },
             "require-dev": {
                 "ext-json": "*",
@@ -9270,7 +9270,7 @@
             },
             "require": {
                 "illuminate/pipeline": "^8.0|^9.0|^10.0|^11.0",
-                "php": "^8.0",
+                "php": "^8.2.2",
                 "spatie/backtrace": "^1.5.2",
                 "symfony/http-foundation": "^5.2|^6.0|^7.0",
                 "symfony/mime": "^5.2|^6.0|^7.0",
@@ -9340,7 +9340,7 @@
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": "^8.0",
+                "php": "^8.2.2",
                 "spatie/backtrace": "^1.5.3",
                 "spatie/flare-client-php": "^1.4.0",
                 "symfony/console": "^5.4|^6.0|^7.0",
@@ -9425,7 +9425,7 @@
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "illuminate/support": "^10.0|^11.0",
-                "php": "^8.1",
+                "php": "^8.2.2",
                 "spatie/flare-client-php": "^1.5",
                 "spatie/ignition": "^1.14",
                 "symfony/console": "^6.2.3|^7.0",
@@ -9585,7 +9585,7 @@
             },
             "require": {
                 "nikic/php-parser": "^4.18.0 || ^5.0.0",
-                "php": "^8.1.0",
+                "php": "^8.2.2.0",
                 "phpdocumentor/reflection-docblock": "^5.3.0",
                 "phpunit/phpunit": "^10.5.5  || ^11.0.0",
                 "symfony/finder": "^6.4.0 || ^7.0.0"
@@ -9646,7 +9646,7 @@
                 "ext-dom": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
-                "php": "^7.2 || ^8.0"
+                "php": "^7.2 || ^8.2"
             },
             "type": "library",
             "autoload": {
@@ -9685,7 +9685,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.2.2"
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
