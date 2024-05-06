@@ -16,6 +16,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <div class="min-h-screen " style="background-image: url('image/bg-image-light-2.jpg')">
             <div class="sticky top-0 z-40">
+                <scripts src="particles.js"></scripts>
+                <scripts src="particles.js"></scripts>
             @include('layouts.navigation')
         </div>
     </head>
