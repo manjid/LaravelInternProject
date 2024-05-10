@@ -6,11 +6,23 @@
                     x-show="show"
                     x-transition
                     x-init="setTimeout(() => show = false, 3000)"
-                    class="pt-2 transition ease-in-out alert bg-slate-500">
+                    class="pt-2 transition ease-in-out alert bg-[#00ab41] border-[#00ab41] text-gray-900">
         {{ __('report has been created') }}
     </p>
     @endif
     </div>
+    <div class="pb-0">
+        @if (session('popup') == 'report-update')
+        <p
+                        x-data="{ show: true }"
+                        x-show="show"
+                        x-transition
+                        x-init="setTimeout(() => show = false, 3000)"
+                        class="pt-2 transition ease-in-out alert bg-[#00ab41] border-[#00ab41] text-gray-900">
+            {{ __('report has been updated') }}
+        </p>
+        @endif
+        </div>
 
 <div class="flex flex-row justify-center py-0 pt-4 text-3xl text-gray-900 hover:animate-FadeIn">
       <h1>Tell Us The Problem You Faced</h1>
@@ -45,9 +57,7 @@
         <h2 for="attachment" class="block mt-4 text-lg font-bold text-gray-700">Attachment:</h2>
         <p class="mb-1 text-sm text-gray-600">put any screenshot or anything if you want</p>
         <input type="file" name="attachment" id="attachment" class="w-full px-3 py-2 leading-tight text-gray-700 bg-transparent border border-gray-200 rounded shadow appearance-none file-input file-input-bordered focus:outline-none focus:shadow-outline">
-        @if ($errors->has('attachment'))
-            <span class="block text-red-500">{{ $errors->first('attachment') }}</span>
-        @endif
+
     </div>
     <div class="flex justify-end">
     <x-primary-button class="mt-4 mb-9 mr-28">

@@ -72,17 +72,37 @@ class helpdeskController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Helpdesk $report)
     {
-        //
+        $id = request('id');
+
+        $report = Helpdesk::query()
+        ->where('id',$id)
+        ->firstOrFail();
+
+        return view('helpdesk.edit', ['report' => $report]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Helpdesk $report)
     {
-        //
+        $validatedData = $request->validate([
+            'title' => 'required|max:255',
+            'problem' => 'required',
+            'description' => 'required|min:10',
+            'attachment' => 'max:2048',
+
+        ]);
+
+        $report = new Helpdesk($validatedData);
+
+        $report->save();
+
+        return Redirect::route('helpdesk.index')->with('popup', 'report-update');
+
+
     }
 
     /**
@@ -98,7 +118,7 @@ class helpdeskController extends Controller
     public function destroy(string $id)
     {
         $helpdesk = Helpdesk::findOrFail($id);
-        if ($helpdesk->isMarkedForDeletion()) {
+        if ($helpdesk->delete_status == 'marked-for-deletion') {
             $helpdesk->forceDelete();
         } else {
             $helpdesk->delete();

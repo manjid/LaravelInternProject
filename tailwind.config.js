@@ -14,8 +14,14 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                'hero-pattern': "url('image/it_helpdesk_bg.jpg')",
+                'footer-texture': "url('/img/footer-texture.png')",
+              }
         },
     },
 
     plugins: [forms,require("daisyui")],
 };
+
+

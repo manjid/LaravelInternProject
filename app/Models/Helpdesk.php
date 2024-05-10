@@ -41,5 +41,11 @@ class Helpdesk extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function markForDeletion()
+    {
+        $this->delete_status = 'marked_for_deletion';
+        $this->save();
+    }
+
 
 }
