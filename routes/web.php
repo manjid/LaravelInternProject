@@ -10,11 +10,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-route::get('/home',[HomeController::class,'index']);
+Route::group(['middleware' => ['auth','verified']],function(){
+    Route::get('/dashboard', [HomeController::class,'index'])->name('dashboard');
+});
 
 Route::get('/helpdesk', [helpdeskController::class, 'helpdesk'])->name('helpdesk.index');
 
