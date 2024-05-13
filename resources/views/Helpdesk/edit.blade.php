@@ -36,14 +36,16 @@
         <input type="file" name="attachment" id="attachment" value="{{ $report->attachment }}" class="w-full px-3 py-2 leading-tight text-gray-700 bg-transparent border border-gray-200 rounded shadow appearance-none file-input file-input-bordered focus:outline-none focus:shadow-outline">
 
     </div>
+    <div class="">
     <!-- Submit button for create or update -->
-    <x-primary-button class="mt-4 ml-28">
+    <x-primary-button class="mt-4 ml-28 transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105 btn bg-gray-700 text-sm font-sans border-[#a50034] hover:bg-gray-200 hover:border-white hover:text-gray-900">
         {{ __('Update') }}
     </x-primary-xbutton>
 </form>
-<x-nav-link :href="route('helpdesk.store')" :active="request()->routeIs('helpdesk.store')" class=" ml-30 px-4 mb-32  transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105 btn bg-[#a50034] text-sm font-sans border-[#a50034] hover:bg-gray-200 hover:border-white hover:text-gray-900">
+<x-nav-link :href="route('helpdesk.store')" :active="request()->routeIs('helpdesk.store')" class=" ml-4 px-4 py-1 mb-32 transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105 btn bg-[#a50034] text-sm font-sans border-[#a50034] hover:bg-gray-200 hover:border-white hover:text-gray-900">
     <button>{{ __('Back') }}</button>
     </x-nav-link>
+    </div>
 
     </div>
 

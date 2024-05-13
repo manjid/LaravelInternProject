@@ -3,6 +3,7 @@
 use App\Http\Controllers\helpdeskController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 
 Route::get('/', function () {
@@ -12,6 +13,8 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+route::get('/home',[HomeController::class,'index']);
 
 Route::get('/helpdesk', [helpdeskController::class, 'helpdesk'])->name('helpdesk.index');
 

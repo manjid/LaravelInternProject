@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        if(!Schema::hasTable('helpdesk')){
         Schema::create('helpdesk', function (Blueprint $table) {
             $table->id();
             $table->string('title');
@@ -19,6 +20,7 @@ return new class extends Migration
             $table->binary('attachment');
             $table->timestamps();
         });
+    }
     }
 
     /**
