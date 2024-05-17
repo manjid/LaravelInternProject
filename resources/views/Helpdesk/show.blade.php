@@ -22,7 +22,7 @@
         <x-nav-link :href="route('helpdesk.store')" :active="request()->routeIs('helpdesk.store')" class=" ml-44 px-4 mt-10 transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105 btn bg-[#a50034] text-sm font-sans border-[#a50034] hover:bg-gray-200 hover:border-white hover:text-gray-900">
             <button>{{ __('Back') }}</button>
             </x-nav-link>
-        <div class="py-12 h-[calc(100vh-210px)]  ">
+        <div class="py-12 h-[calc(100vh-236px)]  ">
             <div class="mx-auto my-auto space-y-6 max-w-7xl sm:px-6 lg:px-8">
                 <div class="flex p-4 bg-white shadow sm:p-8 sm:rounded-lg ">
                     <table class="table text-center table-responsive justify-content-center">

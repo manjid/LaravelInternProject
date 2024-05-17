@@ -1,4 +1,5 @@
 <x-app-layout>
+    <div class="h-[calc(100vh-148px)]">
     <div class="pb-0">
     @if (session('status') == 'report-save')
     <p
@@ -24,7 +25,7 @@
         @endif
         </div>
 
-<div class="flex flex-row justify-center py-0 pt-4 text-3xl text-gray-900 hover:animate-FadeIn">
+<div class="flex flex-row justify-center py-0 pt-4 text-3xl text-gray-900 hover:animate-FadeIn ">
       <h1>Tell Us The Problem You Faced</h1>
     </div>
 <form method="POST">
@@ -47,23 +48,23 @@
         @if ($errors->has('problem'))
             <span class="block text-red-500">{{ $errors->first('problem') }}</span>
         @endif
-        <h2 for="description" class="block mt-4 text-lg font-bold text-gray-900">Description:</h2>
+        <h2 for="description" class="block mt-3 text-lg font-bold text-gray-900">Description:</h2>
         <p class="mb-1 text-sm text-gray-600">describe to us what you want us to do</p>
         <textarea name="description" id="description" class="w-full px-3 py-2 leading-tight text-gray-700 border border-gray-200 rounded shadow appearance-none focus:outline-none focus:shadow-outline" rows="4">{{ old('description') }}</textarea>
         @if ($errors->has('description'))
             <span class="block text-red-500">{{ $errors->first('description') }}</span>
         @endif
 
-        <h2 for="attachment" class="block mt-4 text-lg font-bold text-gray-700">Attachment:</h2>
+        <h2 for="attachment" class="block mt-3 text-lg font-bold text-gray-700">Attachment:</h2>
         <p class="mb-1 text-sm text-gray-600">put any screenshot or anything if you want</p>
         <input type="file" name="attachment" id="attachment" class="w-full px-3 py-2 leading-tight text-gray-700 bg-transparent border border-gray-200 rounded shadow appearance-none file-input file-input-bordered focus:outline-none focus:shadow-outline">
 
     </div>
     <div class="flex justify-end">
-    <x-primary-button class="mt-4 mb-9 mr-28">
+    <x-primary-button class="mt-4 mb-3 mr-28">
         {{ __('submit') }}
     </x-primary-xbutton>
 </div>
 </form>
-
+    </div>
 </x-app-layout>

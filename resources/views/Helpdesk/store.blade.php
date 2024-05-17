@@ -1,11 +1,10 @@
 <x-app-layout>
 
     <head>
-        <title>Report</title>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
-    <div class="py-12 overflow-hidden overflow-x-auto overflow-y-auto">
-        <div class="mx-auto space-y-6 max-w-7xl sm:px-6 lg:px-8 selection:h-[calc(100vh-140px)]">
+    <div class="py-12 overflow-hidden overflow-x-auto overflow-y-auto h-[calc(100vh-148px)] ">
+        <div class="mx-auto space-y-6 max-w-7xl sm:px-6 lg:px-8 ">
             <div class="p-4 bg-white shadow sm:p-8 sm:rounded-lg">
 
                 <body>

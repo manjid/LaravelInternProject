@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <div class="h-[calc(100vh-130px)]">
+    <div class="h-[calc(100vh-148px)]">
     <form action="{{ route('helpdesk.update', $report->id ) }}" method="POST">
     @csrf
     @method('PUT')
@@ -42,11 +42,9 @@
         {{ __('Update') }}
     </x-primary-xbutton>
 </form>
-<x-nav-link :href="route('helpdesk.store')" :active="request()->routeIs('helpdesk.store')" class=" ml-4 px-4 py-1 mb-32 transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105 btn bg-[#a50034] text-sm font-sans border-[#a50034] hover:bg-gray-200 hover:border-white hover:text-gray-900">
+<x-nav-link :href="route('helpdesk.store')" :active="request()->routeIs('helpdesk.store')" class=" ml-4 px-4 py-1 transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105 btn bg-[#a50034] text-sm font-sans border-[#a50034] hover:bg-gray-200 hover:border-white hover:text-gray-900">
     <button>{{ __('Back') }}</button>
     </x-nav-link>
-    </div>
-
     </div>
 
 </x-app-layout>

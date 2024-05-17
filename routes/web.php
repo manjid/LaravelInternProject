@@ -33,6 +33,9 @@ Route::delete('/helpdesk/{helpdesk}', [helpdeskController::class, 'destroy'])->n
 //display,delete,edit
 Route::get('/store', [helpdeskController::class, 'index'])->name('helpdesk.store');
 
+// Admin page
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
