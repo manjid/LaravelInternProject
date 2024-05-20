@@ -12,15 +12,15 @@ class adminController extends Controller
 
     public function list()
     {
-        $totalReport = Helpdesk::all()->count();
+        $totalReport = Helpdesk::count();
         $totalUsers = User::all()->count();
         $todayDate = Carbon::now()->format('d-m-Y');
         $thisMonth = Carbon::now()->format('m');
         $todaysReport = Helpdesk::whereDate('created_at' , $todayDate)->count();
         $thisMonthReport = Helpdesk::whereMonth('created_at' , $thisMonth)->count();
+        $reports = Helpdesk::latest()->paginate(5);
 
-
-        return view('admin.admin', compact('totalReport','totalUsers','todaysReport','thisMonthReport'));
+        return view('dashboard', compact('totalReport','totalUsers','todaysReport','thisMonthReport', 'reports'))->with(request()->input('page'));
     }
 
 }

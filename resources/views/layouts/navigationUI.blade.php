@@ -7,6 +7,15 @@
     </a>
     </div>
     </div>
+    <div class="hidden navbar-center lg:flex">
+      <ul class="px-1 menu menu-horizontal">
+          <li><a>Dashboard</a></li>
+        <li><a>Admin Profile</a></li>
+        <li><a>Reports</a></li>
+        <li><a>User</a></li>
+        <li><a>Report Settled</a></li>
+      </ul>
+    </div>
     <div class="navbar-end">
       <!-- Settings Dropdown -->
       <div class="hidden sm:flex sm:items-center sm:ms-6 ">
@@ -24,6 +33,7 @@
             </x-slot>
 
             <x-slot name="content">
+
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf

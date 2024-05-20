@@ -13,9 +13,10 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['auth','verified']],function(){
     Route::get('/dashboard', [HomeController::class,'index'])->name('dashboard');
+    Route::get('/dashboard',[adminController::class, 'list'])->name('dashboard');
 });
 
-Route::get('/admin',[adminController::class, 'list'])->name('admin.admin');
+
 
 Route::get('/helpdesk', [helpdeskController::class, 'helpdesk'])->name('helpdesk.index');
 

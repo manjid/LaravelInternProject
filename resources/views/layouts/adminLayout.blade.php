@@ -50,12 +50,7 @@
 
             <!-- Page Content -->
             <main>
-                <div class="ml-5 fixed-container">
-                    @include('layouts.sidebar')
-                </div>
-                <div class="ml-96">
                 {{ $slot }}
-            </div>
             </main>
         </body>
         <footer class="items-center p-4 mb-0 text-gray-200 footer bg-base-200">

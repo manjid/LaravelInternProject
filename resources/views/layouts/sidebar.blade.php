@@ -1,4 +1,4 @@
-
+<div class="w-64">
     <div class="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-side">
@@ -21,3 +21,4 @@
             </ul>
         </div>
     </div>
+</div>
