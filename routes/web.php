@@ -4,6 +4,7 @@ use App\Http\Controllers\helpdeskController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\adminController;
 
 
 Route::get('/', function () {
@@ -13,6 +14,8 @@ Route::get('/', function () {
 Route::group(['middleware' => ['auth','verified']],function(){
     Route::get('/dashboard', [HomeController::class,'index'])->name('dashboard');
 });
+
+Route::get('/admin',[adminController::class, 'list'])->name('admin.admin');
 
 Route::get('/helpdesk', [helpdeskController::class, 'helpdesk'])->name('helpdesk.index');
 

@@ -10,22 +10,17 @@ use Laravel\Sail\Console\PublishCommand;
 class adminController extends Controller
 {
 
-    public function getTotalReport()
+    public function list()
     {
-        $totalReport = Helpdesk::count();
-        $totalUsers = User::count();
+        $totalReport = Helpdesk::all()->count();
+        $totalUsers = User::all()->count();
         $todayDate = Carbon::now()->format('d-m-Y');
         $thisMonth = Carbon::now()->format('m');
         $todaysReport = Helpdesk::whereDate('created_at' , $todayDate)->count();
         $thisMonthReport = Helpdesk::whereMonth('created_at' , $thisMonth)->count();
 
-        $id = request('id');
 
-        $report=Helpdesk::query()
-        ->where('id',$id)
-        ->firstOrFail();
-
-        return view('admin.admin');
+        return view('admin.admin', compact('totalReport','totalUsers','todaysReport','thisMonthReport'));
     }
 
 }

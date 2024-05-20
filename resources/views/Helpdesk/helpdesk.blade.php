@@ -8,7 +8,7 @@
                     x-transition
                     x-init="setTimeout(() => show = false, 3000)"
                     class="pt-2 transition ease-in-out alert bg-[#00ab41] border-[#00ab41] text-gray-900">
-        {{ __('report has been created') }}
+        {{ __('☑ report has been created') }}
     </p>
     @endif
     </div>
@@ -20,7 +20,7 @@
                         x-transition
                         x-init="setTimeout(() => show = false, 3000)"
                         class="pt-2 transition ease-in-out alert bg-[#00ab41] border-[#00ab41] text-gray-900">
-            {{ __('report has been updated') }}
+            {{ __('☑ report has been updated') }}
         </p>
         @endif
         </div>

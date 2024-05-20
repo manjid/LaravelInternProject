@@ -7,7 +7,7 @@
                 <h1 class="p-4 pb-3 text-lg"><strong>People</strong></h1>
                 <div class="text-white">
                 <li><a>Admin Profile</a></li>
-                <li><a>User Management</a></li>
+                <li><a>Admin Management</a></li>
                 </div>
                 <br>
                 <hr>
@@ -16,7 +16,7 @@
                 <li><a>Dashboard</a></li>
                 <li><a>Reports</a></li>
                 <li><a>User</a></li>
-                <li><a>Reports</a></li>
+                <li><a>Reports Settled</a></li>
                 </div>
             </ul>
         </div>

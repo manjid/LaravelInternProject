@@ -50,7 +50,7 @@ class helpdeskController extends Controller
      */
     public function index()
     {
-        $reports = Helpdesk::latest()->paginate(10);
+        $reports = Helpdesk::latest()->paginate(5);
 
         return view('helpdesk.store', compact('reports'))->with(request()->input('page'));
         //compact tu maksudnya dia sama cam $reports cuma takyah dollar sign, function dia untuk sent ke variable untuk loop
@@ -66,7 +66,7 @@ class helpdeskController extends Controller
         ->where('id',$id)
         ->firstOrFail();
 
-        return view('helpdesk.show', ['report' => $report]);
+        return view('helpdesk.show', compact('report'));
     }
 
     /**
@@ -80,7 +80,7 @@ class helpdeskController extends Controller
         ->where('id',$id)
         ->firstOrFail();
 
-        return view('helpdesk.edit', ['report' => $report]);
+        return view('helpdesk.edit', compact('report'));
     }
 
     /**
