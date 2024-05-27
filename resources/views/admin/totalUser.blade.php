@@ -1,0 +1,48 @@
+<x-admin-layout>
+    <head>
+        <title>Users</title>
+    </head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            white-space: normal;
+        }
+
+        th, td {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        table{
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+    </style>
+        {{-- <x-nav-link :href="route('admin.admin')" :active="request()->routeIs('admin.admin')" class=" ml-44 px-4 mt-10 transition ease-in-out delay-75 hover:-translate-y-2 hover:scale-105 btn bg-[#a50034] text-sm font-sans border-[#a50034] hover:bg-gray-200 hover:border-white hover:text-gray-900">
+            <button>{{ __('Back') }}</button>
+            </x-nav-link> --}}  
+        <div class="py-12 h-[calc(100vh-236px)]  ">
+            <div class="mx-auto my-auto space-y-6 max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex p-4 bg-white shadow sm:p-8 sm:rounded-lg ">
+                    <table class="table text-center table-responsive justify-content-center">
+                        <thead class=" bg-slate-300">
+                            <tr class="text-lg text-gray-700">
+                                <th>id</th>
+                                <th>name</th>
+                                <th>email</th>
+                                <th>usertype</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>{{ $user->id}}</td>
+                            <td>{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>{{ $user->usertype }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+</x-admin-layout>
+

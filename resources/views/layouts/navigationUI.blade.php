@@ -9,8 +9,8 @@
     </div>
     <div class="hidden navbar-center lg:flex">
       <ul class="px-1 menu menu-horizontal">
-          <li><a>Dashboard</a></li>
-        <li><a>Admin Profile</a></li>
+          <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ route('admin.adminProfile') }}">Admin Profile</a></li>
         <li><a>Reports</a></li>
         <li><a>User</a></li>
         <li><a>Report Settled</a></li>

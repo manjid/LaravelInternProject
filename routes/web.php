@@ -19,8 +19,9 @@ Route::group(['middleware' => ['auth','verified']],function(){
 
 
 Route::get('/helpdesk', [helpdeskController::class, 'helpdesk'])->name('helpdesk.index');
-
-
+Route::get('/adminProfile', [ProfileController::class, 'admin'])->name('admin.adminProfile');
+Route::get('/totalUser', [ProfileController::class, 'store'])->name('admin.totalUser');
+Route::get('/store' , [helpdeskController::class, 'indexAdmin'])->name('admin.store');
 // Create
 Route::post('/helpdesk', [helpdeskController::class, 'store'])->name('helpdesk.index');
 

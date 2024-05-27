@@ -58,6 +58,13 @@ class helpdeskController extends Controller
 
     }
 
+    public function indexAdmin()
+    {
+        $reports = Helpdesk::latest()->paginate(5);
+
+        return view('admin.store', compact('reports'))->with(request()->input('page'));
+    }
+
     public function show()
     {
         $id = request('id');

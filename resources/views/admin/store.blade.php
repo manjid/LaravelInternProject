@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-admin-layout>
 
     <head>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -63,10 +63,10 @@
 
         @endforeach
     </table>
-        
+
 </body>
 </div>
 </div>
 </div>
 </html>
-</x-app-layout>
+</x-admin-layout>
